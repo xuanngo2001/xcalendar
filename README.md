@@ -2,6 +2,9 @@
 xCalendar is a simple Firefox addons that displays each month of the calendar year at the top of the statusbar.
 It makes it easier to schedule meetings.
 
+![alt text](https://github.com/limelime/xcalendar/blob/master/firefox/screenshot/xcalendar.png "xCalendar")
+![alt text](https://github.com/limelime/xcalendar/blob/master/firefox/screenshot/xcalendar-options.png "xCalendar options")
+
 # Installation
 1. Download and install extension at https://addons.mozilla.org/ro/firefox/addon/xcalendar/.
 1. From Firefox, click on the **Open menu** icon on the right side of the search field.
