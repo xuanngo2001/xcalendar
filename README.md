@@ -3,8 +3,8 @@ xCalendar is a simple Firefox addons that displays each month of the calendar ye
 It makes it easier to schedule meetings.
 
 # Installation
-1. Download extension at https://addons.mozilla.org/ro/firefox/addon/xcalendar/.
-1. Click on the **Open menu** icon on the right side of the search field.
+1. Download and install extension at https://addons.mozilla.org/ro/firefox/addon/xcalendar/.
+1. From Firefox, click on the **Open menu** icon on the right side of the search field.
 1. Click on **Customize**.
 1. Drap and drop **xCalendar** icon wherever you like.
 
