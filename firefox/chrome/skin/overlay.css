@@ -1,0 +1,58 @@
+hbox#xcal-hbox
+{
+  font-size: xx-small;
+}
+
+hbox#xcal-hbox label
+{
+	text-align: center;
+	vertical-align: middle;
+}
+
+hbox#xcal-hbox label.day-not-part-of-month
+{
+  color: rgb(211, 211, 211); /* light gray */
+}
+
+hbox#xcal-hbox label#today, hbox#xcal-hbox groupbox caption#current-month-caption
+{
+	background-color: rgb(0, 162, 232); /* light blue */
+	color: white;
+	font-weight: bold;
+}
+
+hbox#xcal-hbox groupbox caption
+{
+  font-weight: bold;
+}
+
+hbox#xcal-hbox label.weekend
+{
+	color: rgb(150, 0, 0); /* very light red. */
+}
+
+/* Calendar week */
+hbox#xcal-hbox label.cw
+{
+	text-align: right;
+	vertical-align: middle;
+	
+  color: rgb(180, 180, 180); /* light gray */
+  
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+/************************************************************************
+ * Separator
+ ************************************************************************/
+hbox#xcal-hbox.top-separator
+{
+  border-top-style: solid; 
+  border-top-width: 1px;
+  border-top-color: rgb(160, 160, 160);
+}
+hbox#xcal-hbox.no-top-separator
+{
+  border: 0;
+}

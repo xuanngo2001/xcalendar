@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://xCalendar/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://xCalendar/locale/overlay.dtd">
+<overlay id="helloworld-overlay"
+          xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+         
+  <script type="application/x-javascript" src="overlay.js"/>
+  
+  <!-- Add xCalendar icon in the statusbar. -->
+  <statusbar id="status-bar">
+    <statusbarpanel id="xcal-statusbarpanel" 
+                    image="chrome://xCalendar/skin/statusbar-icon.png"
+                    class="statusbarpanel-iconic"
+                    tooltiptext="xCalendar"
+                    onclick="xCalendar.onStatusbarIconClick(event);"
+                    />
+  </statusbar>
+  
+  <!-- vbox that will hold xCalendar. -->
+  <vbox id="browser-bottombox">
+    <hbox id="xcal-hbox" pack="center" insertbefore="status-bar" style="overflow: auto;"/>
+  </vbox>
+
+  <!-- Add xCalendar in Toolbar Layout so that user can choose to add in the custom toolbar. -->
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="xcal-palette-toolbar-button" 
+                    label="xCalendar"
+                    image="chrome://xCalendar/skin/statusbar-icon.png"
+                    tooltiptext="xCalendar\n Click on icon to open or close the calendar."
+                    oncommand="xCalendar.onStatusbarIconClick(event);"/>
+                    
+  </toolbarpalette>
+  
+  <!-- Add xCalendar directly in the toolbar
+  <toolbox id="navigator-toolbox">
+    <toolbar id="xcal-toolbox-toolbar" 
+             toolbarname="xCalendar" 
+             accesskey="X"
+             class="chromeclass-toolbar" 
+             context="toolbar-context-menu"
+             hidden="false" 
+             persist="hidden">
+             
+      <toolbarbutton id="xcal-toolbox-toolbar-button" 
+            tooltiptext="xCalendar"
+            image="chrome://xCalendar/skin/statusbar-icon.png" 
+            oncommand="xCalendar.onStatusbarIconClick(event);" />
+    
+    </toolbar>
+  
+  </toolbox>
+  -->
+
+</overlay>

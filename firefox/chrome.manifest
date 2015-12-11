@@ -1,0 +1,6 @@
+content xCalendar             jar:chrome/xCalendar.jar!/content/
+skin    xCalendar classic/1.0 jar:chrome/xCalendar.jar!/skin/
+locale  xCalendar en-US       jar:chrome/xCalendar.jar!/locale/en-US/
+
+overlay chrome://browser/content/browser.xul          chrome://xCalendar/content/overlay.xul
+style   chrome://global/content/customizeToolbar.xul  chrome://xCalendar/skin/overlay.css

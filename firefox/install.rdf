@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    
+    <!-- General mandatory information -->
+    <em:id>xuanngolist@yahoo.ca</em:id>
+    <em:name>xCalendar</em:name>
+    <em:version>1.5.1-signed</em:version>
+    <em:description>Display each month of the calendar year on top of the statusbar. 
+      It simplifies meetings scheduling. 
+      Click on the xCalendar icon in the statusbar to open and close the calendar.
+    </em:description>
+    <em:type>2</em:type>                     <!-- See type definitions at https://developer.mozilla.org/en/install_manifests#type -->
+    <em:creator>Xuan Ngo</em:creator>
+    
+    <!-- Optional information -->
+    <em:homepageURL>http://openwritings.net/public/firefox-extension/xcalendar</em:homepageURL>
+    <em:iconURL>chrome://xCalendar/skin/main-icon.png</em:iconURL><!-- Taken from http://www.openclipart.org/detail/34669 (Architetto - tabella) --> 
+    
+    <!-- Options dialog-->
+    <em:optionsURL>chrome://xCalendar/content/options.xul</em:optionsURL>
+    
+    <!-- Firefox information -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id><!-- This is the ID of Firefox. -->
+        <em:minVersion>3.0</em:minVersion><!-- Valid versions can be find at 
+                                                https://addons.mozilla.org/en-US/firefox/pages/appversions/ -->
+        <em:maxVersion>10.*</em:maxVersion><!-- You have to change this to match the version of your Firefox. 
+                                                  Otherwise, you can't install it. -->
+      </Description>
+    </em:targetApplication>
+
+    <em:unpack>true</em:unpack>
+  </Description>
+
+</RDF>
