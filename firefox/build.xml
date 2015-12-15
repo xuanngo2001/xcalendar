@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project basedir="." default="build" name="xCalendar">
+	
+	<property name="VERSION" value="1.5"/>
+	
+  <tstamp><format property="DAY_TIME_NOW" pattern="yyyy-MM-dd_HH.mm.ss" /></tstamp>
   <target name="build">
-    <!-- JAR the content of your chrome/ folder -->
+    
+  	<!-- JAR the content of your chrome/ folder -->
     <jar destfile="${ant.project.name}.jar">
       <fileset dir="chrome">
         <exclude name="${ant.project.name}.jar"/>
       </fileset>
     </jar>
- 
-    <!-- Create XPI file. -->
+  	
+  	<!-- Create XPI file. -->
     <move file="${ant.project.name}.jar" todir="chrome" overwrite="yes" />
-    <zip destfile="${ant.project.name}.xpi" basedir=".">
-        <include name="chrome/${ant.project.name}.jar"/>
-        <include name="chrome.manifest"/>
-        <include name="install.rdf"/>
+    <zip destfile="archive/${ant.project.name}_${VERSION}_${DAY_TIME_NOW}.xpi" basedir=".">
+      <include name="chrome/${ant.project.name}.jar"/>
+      <include name="chrome.manifest"/>
+      <include name="install.rdf"/>
+    	<include name="readme.txt"/>
     </zip>
-    <!--
-      The content of your XPI file looks like the following:
-      C:.
-      ¦   chrome.manifest
-      ¦   install.rdf
-      ¦
-      +---chrome
-              yourFirefoxExtName.jar      
-    -->
+    
+  	<!-- Create uploadable XPI file. -->
+  	<copy file="archive/${ant.project.name}_${VERSION}_${DAY_TIME_NOW}.xpi" 
+  	      tofile="archive/${ant.project.name}.xpi"
+  		    overwrite="true"/>
+
   </target>
+  
 </project>
