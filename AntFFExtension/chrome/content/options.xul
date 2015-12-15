@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?><!-- chrome://global/skin/ is needed. -->
+
+<prefwindow
+    title="xCalendar Preferences"
+    ondialogaccept="xCalendar.onOptionsAccept(event.target);"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  
+  <script type="application/x-javascript" src="chrome://xCalendar/defaults/preferences/pref.js" /><!-- Set the default values of options -->
+  
+  <prefpane label="xCalendar Preferences">
+    <preferences>
+      <preference id="showCalendarWeek" name="extensions.xcalendar.showCalendarWeek" type="bool"/>
+      <preference id="spanYear" name="extensions.xcalendar.spanYear" type="int"/>
+    </preferences>
+
+    <checkbox preference="showCalendarWeek" label="Show Calendar Week (ISO 8601 Week dates)" />
+    
+    <separator class="groove-thin"/>
+    
+    
+    <label value="Number of years to display:"/>
+    <menulist preference="spanYear">
+      <menupopup>
+        <menuitem label="1" value="1" selected="true"/>
+        <menuitem label="2" value="2"/>
+        <menuitem label="3" value="3"/>
+        <menuitem label="4" value="4"/>
+        <menuitem label="5" value="5"/>
+        <menuitem label="6" value="6"/>
+        <menuitem label="7" value="7"/>
+        <menuitem label="8" value="8"/>
+        <menuitem label="9" value="9"/>
+        <menuitem label="10" value="10"/>
+      </menupopup>
+    </menulist>
+    
+  </prefpane>
+
+</prefwindow>
