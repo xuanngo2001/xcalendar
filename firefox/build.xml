@@ -15,15 +15,15 @@
   	
   	<!-- Create XPI file. -->
     <move file="${ant.project.name}.jar" todir="chrome" overwrite="yes" />
-    <zip destfile="archive/${ant.project.name}_${VERSION}_${DAY_TIME_NOW}.xpi" basedir=".">
+    <zip destfile="release/${ant.project.name}_${VERSION}_${DAY_TIME_NOW}.xpi" basedir=".">
       <include name="chrome/${ant.project.name}.jar"/>
       <include name="chrome.manifest"/>
       <include name="install.rdf"/>
     </zip>
     
   	<!-- Create uploadable XPI file. -->
-  	<copy file="archive/${ant.project.name}_${VERSION}_${DAY_TIME_NOW}.xpi" 
-  	      tofile="archive/${ant.project.name}.xpi"
+  	<copy file="release/${ant.project.name}_${VERSION}_${DAY_TIME_NOW}.xpi" 
+  	      tofile="release/${ant.project.name}.xpi"
   		    overwrite="true"/>
 
   </target>
