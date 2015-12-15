@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project basedir="." default="build" name="xCalendar">
 	
-	<property name="VERSION" value="1.5"/>
+	<property name="VERSION" value="1.5.1"/>
 	
   <tstamp><format property="DAY_TIME_NOW" pattern="yyyy-MM-dd_HH.mm.ss" /></tstamp>
   <target name="build">
@@ -15,14 +15,14 @@
   	
   	<!-- Create XPI file. -->
     <move file="${ant.project.name}.jar" todir="chrome" overwrite="yes" />
-    <zip destfile="release/${ant.project.name}_${VERSION}_${DAY_TIME_NOW}.xpi" basedir=".">
+    <zip destfile="release/${ant.project.name}_${VERSION}.xpi" basedir=".">
       <include name="chrome/${ant.project.name}.jar"/>
       <include name="chrome.manifest"/>
       <include name="install.rdf"/>
     </zip>
     
   	<!-- Create uploadable XPI file. -->
-  	<copy file="release/${ant.project.name}_${VERSION}_${DAY_TIME_NOW}.xpi" 
+  	<copy file="release/${ant.project.name}_${VERSION}.xpi" 
   	      tofile="release/${ant.project.name}.xpi"
   		    overwrite="true"/>
 
