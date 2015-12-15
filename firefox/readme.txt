@@ -1,7 +1,7 @@
 DESCRIPTION
 ======================
-xCalendar is a plug-in for Firefox browser. It displays each month of the calendar year on the top of the status bar.
-It simplifies meetings scheduling.
+xCalendar is a plug-in for Firefox browser. It displays the calendar on the top of the status bar.
+It makes it easier to schedule meetings.
 
 
 USAGE
