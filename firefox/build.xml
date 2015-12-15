@@ -19,7 +19,6 @@
       <include name="chrome/${ant.project.name}.jar"/>
       <include name="chrome.manifest"/>
       <include name="install.rdf"/>
-    	<include name="readme.txt"/>
     </zip>
     
   	<!-- Create uploadable XPI file. -->
