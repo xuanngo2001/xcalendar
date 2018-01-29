@@ -18,3 +18,6 @@ Click on the **xCalendar** icon to open or close the calendar.
 * **Show Calendar Week**: Switch on if you want to display the calendar week.
 * **Number of years to display**: Select the number of years to display before and after the current month.
 
+# Resources
+* http://firefox-extension.wikidot.com/examples-of-code
+* http://www.toptip.ca/2010/03/firefox-extension-programming-add.html
